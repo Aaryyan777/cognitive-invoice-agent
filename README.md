@@ -1,6 +1,6 @@
-# Flowbit AI Memory Agent (Enterprise Suite)
+# Flowbit AI Memory Agent
 
-This project implements a sophisticated AI Agent with **"Learned Memory"** for document automation. Unlike traditional systems that treat every document as a new entry, this agent improves over time by remembering past human corrections, vendor-specific patterns, and resolution histories.
+This project implements an AI Agent with **"Learned Memory"** for document automation. Unlike traditional systems that treat every document as a new entry, this agent improves over time by remembering past human corrections, vendor-specific patterns and resolution histories.
 
 ##  Features
 
@@ -14,20 +14,20 @@ This project implements a sophisticated AI Agent with **"Learned Memory"** for d
 - **Confidence Evolution**: Implements **Reinforcement** (confidence grows with usage) and **Decay** (unused patterns weaken over time).
 - **Duplicate Detection**: Advanced checking using **Semantic Fingerprinting** (Vendor + Date + Amount) to identify duplicates even if they have different internal IDs.
 
-### Enterprise UI (AI Command Center)
-- **Modern Enterprise HUD**: A high-end, sophisticated interface using a professional Indigo/Slate palette.
+### UI 
+- **Modern Enterprise HUD**: A simple and subtle interface.
 - **Side-by-Side Analysis**: Real-time visualization comparing raw extraction against the agent's neural corrections.
 - **Knowledge Base Inspector**: A visual dashboard to explore the agent's internal "Brain State," including learned patterns and confidence scores.
 - **Transaction Audit Trace**: Detailed, timestamped logs of every internal step for full auditability and transparency.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - **Backend**: Node.js, TypeScript (Strict Mode), Express.js.
 - **Frontend**: React 18, Vite, Tailwind CSS, Framer Motion (Animations), Lucide Icons.
 - **Persistence**: File-based JSON storage (`memory.json`).
 
 ##  Design & Logic Architecture
 
-The suite is built on the principle of **"Human-in-the-Loop Intelligence,"** where the system acts as an apprentice that observes human corrections and encodes them into permanent corporate knowledge.
+The suite is built on the principle of **"Human-in-the-Loop Intelligence"** , where the system acts as an apprentice that observes human corrections and encodes them into permanent corporate knowledge.
 
 ### 1. Design Philosophy
 - **Data-Centric Robustness**: Instead of relying on rigid, hardcoded rules, the agent treats the raw text of an invoice as a "discovery zone," learning which keywords signal important data points dynamically.
