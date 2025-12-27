@@ -2,7 +2,7 @@
 
 This project implements a sophisticated AI Agent with **"Learned Memory"** for document automation. Unlike traditional systems that treat every document as a new entry, this agent improves over time by remembering past human corrections, vendor-specific patterns, and resolution histories.
 
-## 🚀 Features
+##  Features
 
 ### Core Intelligence
 - **4-Step Cognitive Loop**: Explicit `Recall` -> `Apply` -> `Decide` -> `Learn` architecture.
@@ -25,7 +25,7 @@ This project implements a sophisticated AI Agent with **"Learned Memory"** for d
 - **Frontend**: React 18, Vite, Tailwind CSS, Framer Motion (Animations), Lucide Icons.
 - **Persistence**: File-based JSON storage (`memory.json`).
 
-## 🧠 Design & Logic Architecture
+##  Design & Logic Architecture
 
 The suite is built on the principle of **"Human-in-the-Loop Intelligence,"** where the system acts as an apprentice that observes human corrections and encodes them into permanent corporate knowledge.
 
@@ -49,7 +49,7 @@ The agent's "thinking" process follows a standardized four-stage pipeline:
 The system features a **Translation Middleware** that automatically detects the incoming JSON dialect. It can ingest the complex nested structure found in the **PDF Appendix** and flatten it into a professional, internal schema without user intervention.
 
 
-## 📋 Scenario Coverage
+##  Scenario Coverage
 1.  **Scenario 1: Cold Start**: Correctly flags unknown vendors for human review.
 2.  **Scenario 2: Pattern Learning**: Learns "Leistungsdatum" -> `serviceDate` after one human correction.
 3.  **Scenario 3: VAT Strategy**: Automatically handles tax recalculation for inclusive totals.
@@ -59,7 +59,7 @@ The system features a **Translation Middleware** that automatically detects the 
 7.  **Scenario 7: PO Matching**: Identifies and links Purchase Order numbers via learned keywords.
 8.  **Scenario 8: Semantic Duplicates**: Flags invoices with identical Vendor/Date/Amount, even with different system IDs.
 
-## 🚦 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Node.js (v16+)
@@ -96,7 +96,8 @@ Double-click the `start_demo.bat` file in the root directory. This will launch b
    ```
    *Runs on http://localhost:5173*
 
-## 📁 Project Structure
+##  Project Structure
+- `start_demo.bat`: double click automatically launches the Backend API and the Frontend UI. 
 - `src/agent.ts`: Core AI logic and the 4-step cognitive loop.
 - `src/memory.ts`: Persistence layer with decay, reinforcement, and fingerprinting.
 - `src/server.ts`: REST API backend.
@@ -107,7 +108,7 @@ Double-click the `start_demo.bat` file in the root directory. This will launch b
 - `dashboard/`: React frontend source code.
 - `memory.json`: Persistent database file.
 
-## 📄 Output Contract
+##  Output Contract
 Every invoice processing request returns a standardized JSON structure:
 ```json
 {
