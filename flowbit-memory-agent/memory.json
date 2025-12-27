@@ -1,0 +1,80 @@
+{
+  "vendors": {
+    "Supplier GmbH": {
+      "vendorName": "Supplier GmbH",
+      "patterns": {
+        "serviceDate": {
+          "pattern": "Leistungsdatum",
+          "confidence": 0.5,
+          "frequency": 1,
+          "lastSeen": "2025-12-27T09:20:23.405Z"
+        },
+        "poNumber": {
+          "pattern": "Order No",
+          "confidence": 0.5,
+          "frequency": 1,
+          "lastSeen": "2025-12-27T09:20:23.410Z"
+        }
+      },
+      "defaults": {}
+    },
+    "Freight & Co": {
+      "vendorName": "Freight & Co",
+      "patterns": {
+        "skonto": {
+          "pattern": "Skonto",
+          "confidence": 0.5,
+          "frequency": 1,
+          "lastSeen": "2025-12-27T09:20:23.409Z"
+        }
+      },
+      "defaults": {}
+    },
+    "Skyline Logistics": {
+      "vendorName": "Skyline Logistics",
+      "patterns": {
+        "serviceDate": {
+          "pattern": "Arrival Date",
+          "confidence": 0.5,
+          "frequency": 1,
+          "lastSeen": "2025-12-27T09:21:09.606Z"
+        }
+      },
+      "defaults": {}
+    }
+  },
+  "corrections": [
+    {
+      "context": "description=Transport fee",
+      "correction": "map_sku_FREIGHT",
+      "confidence": 0.5,
+      "successCount": 1,
+      "failCount": 0
+    },
+    {
+      "context": "description=International Air Freight",
+      "correction": "map_sku_AIR-LOG-99",
+      "confidence": 0.5,
+      "successCount": 1,
+      "failCount": 0
+    }
+  ],
+  "processedInvoices": [
+    "INV-A-001",
+    "INV-C-001",
+    "INV-C-003",
+    "INV-A-003",
+    "INV-SPEC-01",
+    "SKY-001",
+    "INV-B-001"
+  ],
+  "invoiceFingerprints": [
+    "Supplier GmbH|2024-01-12|2975",
+    "Freight & Co|2024-03-01|100",
+    "Freight & Co|2024-03-03|100",
+    "Supplier GmbH|2024-01-14|2975",
+    "Final Vendor|2024-12-31|99.99",
+    "Skyline Logistics|2024-05-01|850",
+    "Parts AG|2024-02-05|2400"
+  ]
+}
