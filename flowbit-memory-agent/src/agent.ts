@@ -205,7 +205,7 @@ export class InvoiceAgent {
         }
 
         if (!orig.poNumber && final.poNumber && orig.rawText) {
-            const pkw = ['Purchase Order', 'Order No', 'PO', 'Bestellnr', 'Bestellung'];
+            const pkw = ['Purchase Order', 'Order No', 'Bestellnr', 'Bestellung', 'PO'];
             for (const kw of pkw) {
                 if (orig.rawText.includes(kw)) {
                     this.memoryManager.updateVendorPattern(orig.vendorName, 'poNumber', kw);
