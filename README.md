@@ -88,17 +88,22 @@ Double-click the `start_demo.bat` file in the root directory. This will launch b
 cd flowbit-memory-agent
 ```
 
-2. **Run and Test the demo script**:
+2. **Tests all the 8 different scenarios**:
 ```bash
 npm run demo
 ```
 
-3. **Run and Test all the 12 invoices provided in the sample data appendix**:
+2. **Testing for custom vendors**:
+```bash
+npx ts-node src/custom_check.ts
+```
+
+3. **Tests all the 12 invoices provided in the sample data appendix**:
 ```bash
 npm run test-all
 ```
 
-#### Option B: Manual Start
+#### Option C: Manual Start
 1. **Start Backend API**:
    ```bash
    npx ts-node src/server.ts
