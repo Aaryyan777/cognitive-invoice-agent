@@ -77,10 +77,26 @@ The system features a **Translation Middleware** that automatically detects the 
    cd ..
    ```
 
-### Running the Suite
+### Running the Project
 
 #### Option A: Automated Start (Windows)
 Double-click the `start_demo.bat` file in the root directory. This will launch both the API and the Dashboard in separate windows.
+
+### Option B: Accessing through CLI
+1. **Go to Directory**:
+```bash
+cd flowbit-memory-agent
+```
+
+2. **Run and Test the demo script**:
+```bash
+npm run demo
+```
+
+3. **Run and Test all the 12 invoices provided in the sample data appendix**:
+```bash
+npm run test-all
+```
 
 #### Option B: Manual Start
 1. **Start Backend API**:
@@ -104,6 +120,7 @@ Double-click the `start_demo.bat` file in the root directory. This will launch b
 - `src/demo.ts`: Main CLI validator for the 8 PDF scenarios.
 - `src/custom_check.ts`: Test script for custom, non-appendix vendors.
 - `src/manual_test.ts`: Interactive script for ad-hoc JSON testing.
+- `src/test_all_12.ts`: Test script for all the 12 invoices given in the dataset.
 - `src/dialect_test.ts`: Validator for the Input Normalization (PDF format) layer.
 - `dashboard/`: React frontend source code.
 - `memory.json`: Persistent database file.
