@@ -214,7 +214,10 @@ async function processAndLog(inv: ExtractedInvoice) {
         // For demonstration, we'll just accept the normalized version or apply key corrections
         let corrected = { ...result.normalizedInvoice };
         
-        if (inv.id === "INV-A-001") corrected.serviceDate = "2024-01-01";
+        if (inv.id === "INV-A-001") {
+            corrected.serviceDate = "2024-01-01";
+            corrected.poNumber = "PO-A-050";
+        }
         if (inv.id === "INV-A-003") corrected.poNumber = "PO-A-051";
         if (inv.vendorName === "Freight & Co") {
             corrected.lineItems = corrected.lineItems?.map(item => ({ ...item, sku: "FREIGHT" }));
